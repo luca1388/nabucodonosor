@@ -1,9 +1,9 @@
-name: Deploy Production Frontend
+name: Deploy Dev Frontend
 
 on:
   push:
     branches:
-    - master
+    - dev
 
 jobs:
   deploy:
@@ -22,4 +22,4 @@ jobs:
     - name: Build React App
       run: npm install && npm run build
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./build/ s3://www.nabucodonosor.link --delete
+      run: aws s3 sync ./build/ s3://dev.nabucodonosor.link --delete
