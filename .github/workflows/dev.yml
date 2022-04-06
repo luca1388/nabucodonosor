@@ -22,6 +22,8 @@ jobs:
         aws-region: eu-central-1
     
     - name: Build React App
+      env:
+        REACT_APP_API_URL: http://nabucodonosor.link
       run: npm install && npm run build
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./build/ s3://dev.nabucodonosor.link --delete
