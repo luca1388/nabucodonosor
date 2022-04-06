@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{ backgroundColor: `${process.env.REACT_APP_COLOR}`}}>
         <h1>Nabucodonosor</h1>
         <p>Frontend URL: {window.location.href} (prod env)</p>
         <p>API URL: {process.env.REACT_APP_API_URL}</p>
