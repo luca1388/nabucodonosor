@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Nabucodonosor</h1>
-        <p>Frontend URL: {window.location.href}</p>
+        <p>Frontend URL: {window.location.href} (prod env)</p>
         <p>API URL: {process.env.REACT_APP_API_URL}</p>
         <p>Status response:</p>
         <p>{status}</p>
