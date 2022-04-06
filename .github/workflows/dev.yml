@@ -4,7 +4,9 @@ on:
   push:
     branches:
     - dev
-
+  workflow_dispatch:
+    branches:
+    - dev
 jobs:
   deploy:
     runs-on: ubuntu-latest
