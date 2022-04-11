@@ -36,7 +36,7 @@ function App() {
       >
         <h1>Nabucodonosor</h1>
         <p>
-          Frontend URL: {window.location.href} ({process.env.NODE_ENV}))
+          Frontend URL: {window.location.href} ({process.env.REACT_APP_ENV})
         </p>
         <p>API URL: {process.env.REACT_APP_API_URL}</p>
         <p>Status response:</p>

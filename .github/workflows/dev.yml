@@ -25,6 +25,7 @@ jobs:
       env:
         REACT_APP_API_URL: http://nabucodonosor.link
         REACT_APP_COLOR: '#3864bc'
+        REACT_APP_ENV: 'development'
       run: npm install && npm run build
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./build/ s3://dev.nabucodonosor.link --delete
